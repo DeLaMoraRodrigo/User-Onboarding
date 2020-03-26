@@ -98,7 +98,7 @@ const Form = () => {
                     value={formState.name}
                     onChange={inputChange}
                 />
-                {errors.name.length > 0 ? <p>{errors.name}</p> : null}
+                {errors.name.length > 0 ? <p id="nameP">{errors.name}</p> : null}
             </label>
 
             <br />
@@ -110,7 +110,7 @@ const Form = () => {
                     value={formState.email}
                     onChange={inputChange}
                 />
-                {errors.email.length > 0 ? <p>{errors.email}</p> : null}
+                {errors.email.length > 0 ? <p id="emailP">{errors.email}</p> : null}
             </label>
 
             <br />
@@ -122,7 +122,7 @@ const Form = () => {
                     value={formState.password}
                     onChange={inputChange}
                 />
-                {errors.password.length > 0 ? <p>{errors.password}</p> : null}
+                {errors.password.length > 0 ? <p id="passwordP">{errors.password}</p> : null}
             </label>
 
             <br />
@@ -144,7 +144,7 @@ const Form = () => {
                     checked={formState.terms}
                     onChange={inputChange}
                 />
-                {errors.terms.length > 0 ? <p>{errors.terms}</p> : null}
+                {errors.terms.length > 0 ? <p id="termsP">{errors.terms}</p> : null}
             </label>
 
             <pre>{JSON.stringify(post, null, 2)}</pre>
